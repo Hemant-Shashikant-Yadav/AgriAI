@@ -63,7 +63,8 @@ router.post(
             let img;
             let newNote;
             formData.append("baseImage", base64Image);
-            await fetch("http://localhost:4000/predict", {
+            // await fetch("http://localhost:4000/predict", {
+            await fetch("https://q-2k62.onrender.com/p", {
                 method: "POST",
                 body: formData
             })
